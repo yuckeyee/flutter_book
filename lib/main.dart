@@ -4,14 +4,13 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => MaterialApp(
-        title: 'Flutter layout demo',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('Flutter layour demo'),
-          ),
-          body: Center(
-            child: Text('Hello World'),
+  Widget build(BuildContext context) => Container(
+        decoration: BoxDecoration(color: Colors.white),
+        child: Center(
+          child: Text(
+            'Hello World',
+            textDirection: TextDirection.ltr,
+            style: TextStyle(fontSize: 32, color: Colors.black87),
           ),
         ),
       );
